@@ -1,0 +1,8 @@
+187508.44_Crypto_trader
+average 10 episodes agent net_worth: 41236.33791904569, orders: 21592.2
+
+209141.01_Crypto_trader
+average 10 episodes agent net_worth: 42285.30525559571, orders: 21918.9
+
+209141.01_Crypto_trader, 1 minute, 2019 all
+episode: 0    , net_worth: -55518.87, average_net_worth: -55518.87, orders: 484584
