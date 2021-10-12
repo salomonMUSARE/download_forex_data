@@ -531,7 +531,7 @@ def test_agent(test_df, test_df_nomalized, visualize=False, test_episodes=10, fo
 
 
 if __name__ == "__main__":            
-    df = pd.read_csv('./btcusd_15m_real.csv')
+    df = pd.read_csv('./1h_btcusd.csv')
     # df=df[['Date', 'Open', 'Close', 'High', 'Low', 'Volume']]
     # df = df.sort_values('Date')
     df = AddIndicators(df) 
@@ -575,10 +575,10 @@ if __name__ == "__main__":
     # time.slepp()
     # #===========================
     # # single processing training
-    agent = CustomAgent(Actor = 0 , Critic = 0,lookback_window_size=lookback_window_size, lr=0.00001, epochs=5, optimizer=Adam, batch_size = 32, model="CNN", depth=depth, comment="Normalized")
+    # agent = CustomAgent(Actor = 0 , Critic = 0,lookback_window_size=lookback_window_size, lr=0.00001, epochs=5, optimizer=Adam, batch_size = 32, model="CNN", depth=depth, comment="Normalized")
     # train_env = CustomEnv(df=train_df, df_normalized=train_df_nomalized, lookback_window_size=lookback_window_size)
     # train_agent(train_env, agent, visualize=False, train_episodes=50000, training_batch_size=500)
-    test_agent(test_df, test_df_nomalized, visualize=False, test_episodes=10, folder="2021_10_12_04_39_Crypto_trader", name="209141.01_Crypto_trader", comment="3 months", Show_reward=False, Show_indicators=False)
+    # test_agent(test_df, test_df_nomalized, visualize=False, test_episodes=10, folder="2021_10_12_04_39_Crypto_trader", name="209141.01_Crypto_trader", comment="3 months", Show_reward=False, Show_indicators=False)
     # agent.load(folder="2021_10_08_07_38_Crypto_trader", name="34259.24_Crypto_trader")
     # # multiprocessing training/testing. Note - run from cmd or terminal
     # Actorr, Criticc = agent.export()
@@ -588,8 +588,8 @@ if __name__ == "__main__":
 
     #=======================================
     # agent = CustomAgent(Actor = Actorr , Critic = Criticc,lookback_window_size=lookback_window_size, lr=0.00001, epochs=5, optimizer=Adam, batch_size=32, model="CNN", depth=depth, comment="Normalized")
-    # agent = CustomAgent(Actor = 0 , Critic = 0,lookback_window_size=lookback_window_size, lr=0.00001, epochs=5, optimizer=Adam, batch_size=32, model="CNN", depth=depth, comment="Normalized")
-    # train_multiprocessing(CustomEnv, agent, train_df, train_df_nomalized, num_worker = 1, training_batch_size=100, visualize=False, EPISODES=40000)
+    agent = CustomAgent(Actor = 0 , Critic = 0,lookback_window_size=lookback_window_size, lr=0.00001, epochs=5, optimizer=Adam, batch_size=32, model="CNN", depth=depth, comment="Normalized")
+    train_multiprocessing(CustomEnv, agent, train_df, train_df_nomalized, num_worker = 1, training_batch_size=100, visualize=False, EPISODES=40000)
 
     # test_multiprocessing(CustomEnv, CustomAgent, test_df, test_df_nomalized, num_worker = 16, visualize=False, test_episodes=1000, folder="2021_02_18_21_48_Crypto_trader", name="3906.52_Crypto_trader", comment="3 months")
     # test_multiprocessing(CustomEnv, CustomAgent, test_df, test_df_nomalized, num_worker = 16, visualize=True, test_episodes=1000, folder="2021_02_21_17_54_Crypto_trader", name="3263.63_Crypto_trader", comment="3 months")
