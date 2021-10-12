@@ -3,3 +3,13 @@
 2021-10-12 05:07, 187508.44_Crypto_trader, test episodes:10, net worth:4982.664799999779, orders per episode:2095.9, no profit episodes:1, model: CNN, comment: 3 months
 2021-10-12 05:23, 187508.44_Crypto_trader, test episodes:10, net worth:41236.33791904569, orders per episode:21592.2, no profit episodes:0, model: CNN, comment: 3 months
 2021-10-12 05:56, 209141.01_Crypto_trader, test episodes:10, net worth:42285.30525559571, orders per episode:21918.9, no profit episodes:0, model: CNN, comment: 3 months
+2021-10-12 14:27, 33888.89_Crypto_trader, test episodes:10, net worth:-5776.658462649097, orders per episode:1429.7, no profit episodes:10, model: CNN, comment: 3 months
+2021-10-12 14:29, 85426.86_Crypto_trader, test episodes:10, net worth:6573.491130371823, orders per episode:1457.0, no profit episodes:4, model: CNN, comment: 3 months
+2021-10-12 14:32, 297234.60_Crypto_trader, test episodes:10, net worth:8509.233757537837, orders per episode:1632.9, no profit episodes:4, model: CNN, comment: 3 months
+2021-10-12 14:34, 297234.60_Crypto_trader, test episodes:10, net worth:7240.047020999897, orders per episode:1635.4, no profit episodes:2, model: CNN, comment: 3 months
+2021-10-12 14:43, 440247.79_Crypto_trader, test episodes:10, net worth:8268.08264755989, orders per episode:1850.9, no profit episodes:1, model: CNN, comment: 3 months
+2021-10-12 14:49, 486726.52_Crypto_trader, test episodes:10, net worth:20886.263524360864, orders per episode:1896.4, no profit episodes:0, model: CNN, comment: 3 months
+2021-10-12 14:50, 486726.52_Crypto_trader, test episodes:10, net worth:18061.364714225878, orders per episode:1900.7, no profit episodes:0, model: CNN, comment: 3 months
+2021-10-12 14:54, 525578.72_Crypto_trader, test episodes:10, net worth:3102.5552177138725, orders per episode:2101.1, no profit episodes:5, model: CNN, comment: 3 months
+2021-10-12 14:59, 525578.72_Crypto_trader, test episodes:10, net worth:-5155.7410464210425, orders per episode:698.7, no profit episodes:8, model: CNN, comment: 3 months
+2021-10-12 15:01, 486726.52_Crypto_trader, test episodes:10, net worth:2429.3977132339646, orders per episode:628.8, no profit episodes:5, model: CNN, comment: 3 months

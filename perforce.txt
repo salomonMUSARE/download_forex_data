@@ -1,3 +1,4 @@
+on data of 50k length
 187508.44_Crypto_trader
 average 10 episodes agent net_worth: 41236.33791904569, orders: 21592.2
 
@@ -6,3 +7,77 @@ average 10 episodes agent net_worth: 42285.30525559571, orders: 21918.9
 
 209141.01_Crypto_trader, 1 minute, 2019 all
 episode: 0    , net_worth: -55518.87, average_net_worth: -55518.87, orders: 484584
+
+
+on data following it's trained data, whole length of data is 8534
+33888.89 on data following it's trained data
+average 10 episodes agent net_worth: -5776.658462649097, orders: 1429.7
+
+85426.86
+average 10 episodes agent net_worth: 6573.491130371823, orders: 1457.0
+
+
+297234.60: of 967th episode
+average 10 episodes agent net_worth: 8509.233757537837, orders: 1632.9
+No profit episodes: 4
+
+440247.79 of train episode 1139
+1st episode
+episode: 0    , net_worth: 6089.36, average_net_worth: 6089.36, orders: 1835
+average 10 episodes agent net_worth: 8268.08264755989, orders: 1850.9
+No profit episodes: 1
+
+
+486726.52 of 1150 training step for next 3 months
+episode: 0    , net_worth: 14639.09, average_net_worth: 14639.09, orders: 1923
+episode: 1    , net_worth: 13423.24, average_net_worth: 14031.16, orders: 1902
+episode: 2    , net_worth: 5969.39, average_net_worth: 11343.91, orders: 1873
+episode: 3    , net_worth: 21532.29, average_net_worth: 13891.00, orders: 1901
+episode: 4    , net_worth: 20988.84, average_net_worth: 15310.57, orders: 1896
+episode: 5    , net_worth: 22722.91, average_net_worth: 16545.96, orders: 1912
+episode: 6    , net_worth: 25356.20, average_net_worth: 17804.57, orders: 1908
+episode: 7    , net_worth: 13593.70, average_net_worth: 17278.21, orders: 1905
+episode: 8    , net_worth: 21859.81, average_net_worth: 17787.27, orders: 1889
+episode: 9    , net_worth: 20528.18, average_net_worth: 18061.36, orders: 1898
+average 10 episodes agent net_worth: 18061.364714225878, orders: 1900.7
+No profit episodes: 0
+
+for nect 1months
+episode: 0    , net_worth: 6073.16, average_net_worth: 6073.16,orders: 634
+episode: 1    , net_worth: -8253.11, average_net_worth: -1089.98, orders: 637episode: 2    , net_worth: 652.77 , average_net_worth: -509.06,orders: 623
+episode: 3    , net_worth: 10579.59, average_net_worth: 2263.10, orders: 644
+episode: 4    , net_worth: 21.85  , average_net_worth: 1814.85,orders: 616episode: 5    , net_worth: 3455.24, average_net_worth: 2088.25,orders: 620
+episode: 6    , net_worth: 8733.65, average_net_worth: 3037.59,orders: 628
+episode: 7    , net_worth: 8297.05, average_net_worth: 3695.02,orders: 633episode: 8    , net_worth: -4910.76, average_net_worth: 2738.83, orders: 619
+episode: 9    , net_worth: -355.46, average_net_worth: 2429.40, orders: 634
+average 10 episodes agent net_worth: 2429.3977132339646, orders: 628.8
+No profit episodes: 5
+
+
+525578.72 of 1616th trainning step, and below is testing for teh next 3 months:
+episode: 0    , net_worth: -245.14, average_net_worth: -245.14,orders: 2089
+episode: 1    , net_worth: 15878.02, average_net_worth: 7816.44, orders: 2103
+episode: 2    , net_worth: 12287.02, average_net_worth: 9306.63, orders: 2102
+episode: 3    , net_worth: 2176.37, average_net_worth: 7524.07, orders: 2102
+episode: 4    , net_worth: 5580.51, average_net_worth: 7135.35, orders: 2107
+episode: 5    , net_worth: -317.43, average_net_worth: 5893.22, orders: 2096
+episode: 6    , net_worth: -3237.12, average_net_worth: 4588.89, orders: 2097
+episode: 7    , net_worth: -4617.53, average_net_worth: 3438.09, orders: 2109
+episode: 8    , net_worth: 6156.57, average_net_worth: 3740.14, orders: 2102
+episode: 9    , net_worth: -2635.70, average_net_worth: 3102.56, orders: 2104
+average 10 episodes agent net_worth: 3102.5552177138725, orders: 2101.1
+No profit episodes: 5
+
+the below is testing for next 1months
+episode: 0    , net_worth: -8598.08, average_net_worth: -8598.08, orders: 702
+episode: 1    , net_worth: 2815.66, average_net_worth: -2891.21, orders: 702
+episode: 2    , net_worth: 5277.21, average_net_worth: -168.41, orders: 705
+episode: 3    , net_worth: -11791.85, average_net_worth: -3074.27, orders: 690
+episode: 4    , net_worth: -12090.14, average_net_worth: -4877.44, orders: 699
+episode: 5    , net_worth: -2043.45, average_net_worth: -4405.11, orders: 704
+episode: 6    , net_worth: -7389.57, average_net_worth: -4831.46, orders: 694
+episode: 7    , net_worth: -5879.07, average_net_worth: -4962.41, orders: 696
+episode: 8    , net_worth: -9837.49, average_net_worth: -5504.09, orders: 697
+episode: 9    , net_worth: -2020.63, average_net_worth: -5155.74, orders: 698
+average 10 episodes agent net_worth: -5155.7410464210425, orders: 698.7
+No profit episodes: 8
