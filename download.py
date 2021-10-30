@@ -38,8 +38,8 @@ import pandas as pd
 
 # Define query parameters
 pair = 'BTCUSD' # Currency pair of interest
-TIMEFRAME = '1h'#,'4h','1h','15m','1m'
-TIMEFRAME_S = 3600 # seconds in TIMEFRAME
+TIMEFRAME = '15m'#,'4h','1h','15m','1m'
+TIMEFRAME_S = 15*60 # seconds in TIMEFRAME
 
 # Define the start date
 t_start = datetime.datetime(2019, 10, 12, 0, 0)
@@ -58,26 +58,45 @@ def fetch_data(start, stop, symbol, interval, TIMEFRAME_S):
     data = []
 
     total_steps = (stop-start)/hour
+    tracker = 0
     while total_steps > 0:
+        tracker +=1
         if total_steps < limit: # recalculating ending steps
             step = total_steps * hour
 
         end = start + step
-        print("start", start)
-        print(end)
+        print(tracker)
+        # print(end)
         data += api_v2.candles(symbol=symbol, interval=interval, limit=limit, start=start, end=end)
         # print(pd.to_datetime(start, unit='ms'), pd.to_datetime(end, unit='ms'), "steps left:", total_steps)
         start = start + step +1
         total_steps -= limit
         time.sleep(1.5)
+        if tracker == 8:
+            break
     return data
+count = 0
+
+
+print(count)
 
 result = fetch_data(t_start, t_stop, pair, TIMEFRAME, TIMEFRAME_S)
 names = ['Date', 'Open', 'Close', 'High', 'Low', 'Volume']
 df = pd.DataFrame(result, columns=names)
 df.drop_duplicates(inplace=True)
-df['Date'] = pd.to_datetime(df['Date'], unit='ms')
+# df['Date'] = pd.to_datetime(df['Date'], unit='ms')
 df.set_index('Date', inplace=True)
 df.sort_index(inplace=True)
-df.to_csv(f"{pair}_{TIMEFRAME}_new.csv")
+df_name = f"{pair}_{TIMEFRAME}_new.csv"
+df.to_csv(df_name)
 
+df = pd.read_csv(df_name)
+
+for i in range(len(df) -2):
+  
+  this = df.loc[i,"Date"]
+  thiss = df.loc[i + 1,"Date"]
+  diff = this - thiss
+  if thiss - this != TIMEFRAME_S*1000:
+    count += 1
+print(count)
